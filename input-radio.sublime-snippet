@@ -1,0 +1,16 @@
+<snippet>
+	<content><![CDATA[
+<div class="form-group">
+    <label for="inputEmail" class="control-label col-xs-2">${1:gender}</label>
+    <div class="col-xs-10">
+        <?= Form::radio('${1:gender}','male',('male' == Input::old('${1:gender}') )) ?>male
+        <?= Form::radio('${1:gender}','female',('female'== Input::old('${1:gender}') )) ?>female
+        <?= \$errors->first('${1:gender}','<span class="help-inline text-danger">:message</span>') ?>
+    </div>
+</div>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>la-input-radio</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

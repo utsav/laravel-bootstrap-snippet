@@ -1,0 +1,15 @@
+<snippet>
+	<content><![CDATA[
+<div class="form-group">
+    <label class="control-label col-xs-2">${1:name}</label>
+    <div class="col-xs-10">
+        <?= Form::text('${1:name}',Input::old('${1:name}'),array('placeholder'=>'enter ${1:name}','class'=>'form-control')) ?>
+		<?= \$errors->first('${1:name}','<span class="help-inline text-danger">:message</span>') ?>
+	</div>
+</div>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>la-input-text</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+<?= Form::open(array('url'=>route('${1:route.store}'),'class' => 'form-horizontal' )) ?>
+
+<?= Form::close() ?>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>la-form</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
