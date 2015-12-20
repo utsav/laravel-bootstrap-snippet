@@ -3,7 +3,7 @@
 <div class="form-group">
     <label class="control-label col-xs-2">${1:select}</label>
     <div class="col-xs-10">
-        <?= Form::text('${1:select}',\$${1:select},Input::old('${1:select}'),array('placeholder'=>'enter ${1:select}','class'=>'form-control')) ?>x
+        <?= Form::select('${1:select}',\$${1:select},Input::old('${1:select}'),array('placeholder'=>'enter ${1:select}','class'=>'form-control')) ?>x
 		<?= \$errors->first('${1:select}','<span class="help-inline text-danger">:message</span>') ?>
 	</div>
 </div>

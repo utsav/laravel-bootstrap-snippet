@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-<?= Form::open($form,array('url'=>route('${1:form.update}',array($form->id)),'class' => 'form-horizontal','id'=>'myForm' )) ?>
+<?= Form::open(array('url'=>route('${1:form.update}',array($form->id)),'class' => 'form-horizontal','id'=>'myForm' )) ?>
 
 <?= Form::close() ?>
 ]]></content>
